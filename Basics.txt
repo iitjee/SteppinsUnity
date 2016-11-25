@@ -20,7 +20,7 @@ If you have a tile sheet of 16x16 tiles, you may want to consider setting the pi
 
 
 Assets
-- sprites
+- sprites       = Images
 - sprite-sheets
 - textures
 
@@ -47,10 +47,13 @@ just close
 
 
 
-Grouping Sprites
+Grouping Sprites for Optimization
+-----------------------------------
 Select all sprites and give a packing tag 
 Window Menu-> Sprite packer: This packs all items with same packing tags
 (This grouping aka batching reduces the system calls to the sprites)
+(You can see this optimization when you click 'stats' while running, you see 'batches' are reduced)
+
 
 
 
@@ -79,7 +82,7 @@ give z-index for quad to 2 so that it'll go further away from camera.
 (In 2D z is not required but quad is a 3D obj and we want to make sure they are layered correctly)
 
 
-
+Shaders alter the way the same materials look in the game
 Shader -> Mobiles -> Alpha Blended
 
 
