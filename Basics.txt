@@ -1,0 +1,111 @@
+
+Press Alt = Hand tool
+Always keep camera in 80 so you can see things while building
+Double click on any item in Hierarchy to go there
+
+Setting a good layout:
+See 1.1
+
+
+Resolution = Device dimensions
+
+Pixels vs Units
+---------------
+100 pixels per unit would mean a sprite that's 100 pixels would equal 1 unit in the scene.
+It's simply a scale to say how many pixels equal one unit. This can affect things like physics. 
+A lower pixels to units setting would require more force to move one unit than a higher pixels to units setting.
+
+Yes, there may be times where you'll want to manipulate the pixels per unit.
+If you have a tile sheet of 16x16 tiles, you may want to consider setting the pixels per unit to 16 so that you can easily snap tiles together in a scene, for example.
+
+
+Assets
+- sprites
+- sprite-sheets
+- textures
+
+Scenes (snapshot of your working dir)
+- scenesaved1
+- scenesaved2
+- scenesaved3
+
+
+SpriteSheets
+-------------
+SpriteMode: Multiple  => Enables Sprite Editor button 
+FilterMode: Point => Makes sure pixel art looks crisp
+Format: True Color => 
+
+
+Sprite Editor:
+Type: Grid by Cell Size
+Pixel Size: X, Y = 34, 34
+Offset: 2, 2
+Padding 2, 2
+Pivot: Center
+just close 
+
+
+
+Grouping Sprites
+Select all sprites and give a packing tag 
+Window Menu-> Sprite packer: This packs all items with same packing tags
+(This grouping aka batching reduces the system calls to the sprites)
+
+
+
+Textures:
+---------
+Selecet a texture
+Texture type: Texture
+wrap mode; repeat   //now texture will repeat whenever we add it to a surface
+filter mode: point
+format: True color
+
+
+Creation of Game Object:
+------------------------
+Gameobj menu -> 3D -> Quad
+Quad is gonna be really small because pixels-to-units are so high
+
+Benefits of Quad:
+They allow you to resize and scale them and 
+give you a large surface to attch artwork to, especially a background in a 2D game
+
+Give quad scale of 32x32 and double click in hierarchy to zoom out
+
+The z-index for camera is set at -10 by default (remember)
+give z-index for quad to 2 so that it'll go further away from camera.
+(In 2D z is not required but quad is a 3D obj and we want to make sure they are layered correctly)
+
+
+
+Shader -> Mobiles -> Alpha Blended
+
+
+
+
+
+
+
+
+
+
+
+
+Remove mesh collider for any quad (it's for 3d games) 
+
+
+
+Spawner:
+
+
+
+
+
+
+
+
+
+
+
